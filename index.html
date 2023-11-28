@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>takesomepics — главная</title>
+
+    <link rel="stylesheet" href="css/indexStyles.css">
+    <script src="js/slider.js"></script>
+</head>
+<body>
+    <!-- Хедер -->
+    <header>
+        <a href="#">все<br/>статьи</a>
+        <a href="index.html" class="title">takesomepics</a>
+        <input type="checkbox" id="burgerCheckbox" class="burgerСheckbox">
+        <label for="burgerCheckbox" class="burger"></label>
+        <div class="burgerLinks">
+            <a href="#">все статьи</a>
+            <a href="#">об авторе</a>
+        </div>
+        <a href="#">об<br/>авторе</a>
+    </header>
+    <!-- Основной контент -->
+
+    <!-- Слайдер "Лучшие статьи" -->
+    <div class="bestArticles">
+        <a href="#">лучшие<br/>статьи</a>
+        <div class="slider">
+            <div class="sliderWrapper">
+                <input type="radio" name="r" id="r1" checked></input> 
+                <input type="radio" name="r" id="r2"></input> 
+                <input type="radio" name="r" id="r3"></input>
+                <input type="radio" name="r" id="r4"></input>
+                <a href="#" class="sliderItem s1">
+                    <p>Парни, вы че издеваетесь? Взяли в камеру в руки и пошел снимай. Че тут сложного!?</p>
+                </a>
+                <a href="#" class="sliderItem">
+                    <p>Перестаньте переключать.</p>
+                </a>
+                <a href="#" class="sliderItem">
+                    <p>Да ну вы чего...</p>
+                </a>
+                <a href="#" class="sliderItem">
+                    <p>Я вас лично ненавижу</p>
+                </a>
+            </div>
+
+            <div class="sliderIndicators">
+                <label for="r1" class="sliderIndicator"></label>
+                <label for="r2" class="sliderIndicator"></label>
+                <label for="r3" class="sliderIndicator"></label>
+                <label for="r4" class="sliderIndicator"></label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Контейнер "Все статьи" -->
+    <div class="allArticles">
+        <a href="#">все<br/>статьи</a>
+        <div class="allArticlesWrapper">
+
+            <a class="miniFirstArticle" href="#">
+                <div class="line"></div>
+                <div class="articleText">
+                    <h4 class="articleTitle">
+                        я научу вас снимать пейзажи
+                    </h4>
+                    <p>
+                        В этой замечательной статье, кроме воды и прочего, я разберу основные аспекты съемки пейзажа. Чтоб вы потом у меня снимали так эти пейзажи грёбаные и все охали только, да ахали! Да, конечно, в 90-х все по другому было... все мы, до единого на пленочку, епта, снимали, понимаешь?
+                    </p>
+                </div>
+            </a>
+            <a class="miniSecondArticle" href="#">
+                <div class="line"></div>
+                <div class="articleText">
+                    <h4 class="articleTitle">
+                        как снимать из космоса?
+                    </h4>
+                    <p>
+                        ХАХХААХА ДА Я САМ ХЗ ВООБЩЕ, давай вместе разбираться! Че за прикол пацаны? Этим занимаются только те, у кого в макро фотографии большие проблемы походу
+                    </p>
+                </div>
+            </a>
+            <a class="miniThirdArticle" href="#">
+                <div class="line"></div>
+                <div class="articleText">
+                    <h4 class="articleTitle">
+                        я научу вас снимать тачки!
+                    </h4>
+                    <p>
+                        Йоу! Пацанчики, погнали снимать тачки, я обожаю блеск своей старой бэхи, когда смотрю на неё, не могу удержаться от того, чтобы сфотать! Я уверен, у вас такое же, с вашими ублюдскими ладами! Хех)
+                    </p>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- Футер -->
+    <footer>
+        <div class="footerTitle">
+            <a href="#">takesomepics</a>
+        </div>
+
+        <div class="footerLinks">
+            <a href="#">тема<br/>светлая</a>
+            <a href="#">все<br/>статьи</a>
+            <a href="#">об<br/>авторе</a>
+        </div>
+    </footer>
+</body>
+</html>
