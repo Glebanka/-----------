@@ -1,0 +1,13 @@
+User-agent: Googlebot
+Sitemap: https://www.takesomepics.ru/sitemap.xml
+Allow: /
+
+User-agent: Yandex
+Sitemap: https://www.takesomepics.ru/sitemap.xml
+Allow: /
+
+User-agent: *
+Sitemap: https://www.takesomepics.ru/sitemap.xml
+Allow: /
+
+Sitemap: https://www.takesomepics.ru/sitemap.xml

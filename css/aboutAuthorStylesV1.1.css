@@ -1,0 +1,187 @@
+div.content{
+    width: 100%;
+    height: auto;
+}
+img{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+.hello{
+    top: 800px;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    
+    font-family: Marck Script;
+    font-size: 280px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110.9%; /* 310.52px */
+    
+    mix-blend-mode: difference;
+}
+.yesItsMe{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 48px;
+}
+.imPhotographer{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 30px;
+    font-size: 28px;
+    width: 900px;
+}
+div.contacts{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+
+    margin-top: 300px;
+    width: 900px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4vw;
+}
+div.contacts > p{
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60.9%; /* 38.976px */ 
+}
+div.contacts div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+div.contacts div p{
+    font-size: 86px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60.9%; /* 23.142px */ 
+}
+div.contacts div div{
+    gap: 0;
+}
+div.contacts a{
+    width: 92px;
+    height: 92px;
+    background-size: 92px 92px;
+}
+a.instagram{
+    background-image: url(../images/instagram.svg);
+}
+a.vk{
+    background-image: url(../images/vk.svg);
+}
+a.telegram{
+    background-image: url(../images/telegram.svg);
+}
+
+/* медиа-запросы*/
+
+@media(max-width:1200px){
+    .hello {
+        top: 66.7vw;
+        font-size: 23.4vw;
+    }
+    .yesItsMe{
+        font-size: 3.75vw;
+        margin-top: 5vw;
+    }
+    .imPhotographer{
+        width: 70.3vw;
+        font-size: 2.25vw;
+        margin-top: 2.5vw;
+    }
+    div.contacts{
+        position: static;
+        transform: translate(0);
+
+        margin-top: 30vw;
+    }
+    div.contacts > p{
+        font-size: 9vw;
+        margin-bottom: 20px;
+    }
+    div.contacts div p{
+        font-size: 8vw;
+    }
+    div.contacts a{
+        width: 10vw;
+        height: 10vw;
+        background-size: 10vw 10vw;
+    }
+    div.contacts div{
+        gap: 2.70px;
+    }
+    div.contacts{
+        width: 73.5vw;
+    }
+}
+@media(max-width:800px){
+    .hello {
+        top: 75vw;
+        font-size: 25vw;
+    }
+    .yesItsMe{
+        font-size: 4.3vw;
+        margin-top: 5vw;
+    }
+    .imPhotographer{
+        width: 81.9vw;
+        font-size: 2.8vw;
+        margin-top: 2.5vw;
+    }
+    div.contacts{
+        margin-top: 40vw;
+    }
+    div.contacts > p{
+        font-size: 10vw;
+    }
+    div.contacts div p{
+        font-size: 9vw;
+    }
+    div.contacts a{
+        width: 11vw;
+        height: 11vw;
+        background-size: 11vw 11vw;
+    }
+}
+@media(max-width:600px){
+    .hello {
+        top: 80vw;
+    }
+    div.contacts{
+        width: 87.1vw;
+    }
+}
+@media(max-width:500px){
+    .hello {
+        top: 85vw;
+    }
+}
+@media(max-width:400px){
+    .hello {
+        top: 90vw;
+    }
+}
+@media(max-width:350px){
+    .hello {
+        top: 95vw;
+    }
+}
+@media(max-width:300px){
+    .hello {
+        top: 100vw;
+    }
+}
+@media(max-width:250px){
+    .hello {
+        top: 105vw;
+    }
+}

@@ -1,0 +1,293 @@
+/* Контент */
+div.contentWrapper {
+    width: 100%;
+    
+    display: flex;
+}
+
+/* Настройки текста статьи */
+article.article{
+    width: 67.55%;
+    padding: 0px 120px 0 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    flex-shrink: 0; 
+}
+
+article.article *:not(div.imgWrapper), div.sidebar * {
+    font-family: Comfortaa;
+}
+article.article *:not(div.imgWrapper){
+    align-self: stretch;
+}
+
+h1.articleMainTitle{
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 96%; /* 52.032px */
+}
+p.articleText{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 122.5%; /* 19.6px */
+}
+h2.articleSecondaryTitle{
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 104%; /* 33.28px */
+    text-align: center;
+}
+h3.articleTertiaryTitle{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 104%; /* 20.8px */
+}
+h4.articleQuaternaryTitle{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 104%; /* 20.8px */
+}
+h5.articleQuinaryTitle{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 104%; /* 20.8px */
+}
+/* Любая картинка */
+div.imgWrapper{
+    display: flex;
+    width: 96.6%;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+div.imgRowWrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+div.imgRowWrapper *{
+    width: 33.3%;
+}
+label{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 122.5%; /* 12.25px */
+    text-align: center;
+}
+
+.textCenter{
+    text-align: center;
+}
+.textIndent{
+    text-indent: 20px;
+}
+
+strong.regular{
+    font-weight: 400;
+}
+strong.medium{
+    font-weight: 500;
+}
+
+strong.strong{
+    font-weight: 600;
+}
+
+p.articleDate{
+    text-overflow: ellipsis;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 104%; /* 16.64px */ 
+}
+
+
+
+.definition{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 4px;
+}
+.definition > h3.articleThirdaryTitle{
+    font-weight: 300;
+}
+.definition > div{
+    display: flex;
+    align-items: flex-start;
+    gap: 3px;
+    align-self: stretch;
+}
+.definition > div > *:first-child{
+    flex-shrink: 0;
+}
+.imgWrapper > .definition{
+    margin-top: 15px;    
+}
+
+.imgWrapper > h3.articleThirdaryTitle{
+    text-align: center;
+}
+
+/* Сайдбар */
+div.sidebar{
+    width: 32.45%;
+    padding: 20px;
+    
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+}
+
+div.sidebar > p{
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 78%;
+    text-indent: 0;
+}
+
+div.sidebar > a{
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 83%; /* 36.52px */
+    text-decoration: none;
+}
+div.articlesWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 36px;
+    flex-wrap: wrap;
+}
+
+div.articlesWrapper > a{
+    display: flex;
+    max-width: 330px;
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+
+    text-decoration: none;
+
+    padding-top: 200px;
+
+    border-radius: 15px;
+    border: 1px solid #13D68F;
+}
+
+div.articlesWrapper > a div.articleText{
+    display: flex;
+    width: 88%;
+    padding: 15px 0 15px 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+div.articlesWrapper > a div.articleText h4{
+    width: 100%;
+    flex-shrink: 0;
+
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 108.4%; /* 26.016px */
+}
+
+div.articlesWrapper > a div.articleText p{
+    width: 100%;
+    height: fit-content;
+    flex-shrink: 0;
+    
+    
+    text-indent: 20px;
+    font-family: Comfortaa;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 104%; /* 16.64px */
+}
+
+div.articlesWrapper > a div.line{
+    width: 100%;
+    height: 1px;
+    
+    background: #13D68F;
+}
+
+div.articlesWrapper a{
+    background-size: 340px 200px;
+    background-repeat: no-repeat;
+    background-position: center 0px;
+}
+
+a.miniSecondArticle{
+    background: url(../images/articleImages/how_to_choose_mirrored_cam/backlight3\ 1.png);
+}
+
+a.miniThirdArticle{
+    background: url(../images/indexImages/car.jpg);
+}
+
+table.articleTable{
+    border: #434343 solid 1px;
+    border-collapse: collapse;
+}
+
+td{
+    padding: 0 0 0 10px;
+    border: #434343 solid 1px;
+}
+
+/* медиа-запросы */
+@media(max-width:1200px) {
+    div.contentWrapper{
+        flex-flow: column;
+    }
+    article.article, div.sidebar{
+        width: 100%;
+    }
+    article.article{
+        padding: 0 10vw;
+    }
+    div.articlesWrapper{
+        flex-flow: row wrap;
+    }
+    div.articlesWrapper > a{
+        width: 330px;
+    }
+}
+@media(max-width:600px) {
+    h1.articleMainTitle{
+        font-size: 36px;
+    }
+    article.article{
+        padding: 0;
+    }
+}
+@media(max-width:444px) {
+    h1.articleMainTitle{
+        font-size: 32px;
+    }
+    div.articlesWrapper > a{
+        width: 100%;
+    }
+}

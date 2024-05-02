@@ -1,31 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="htmlId" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>takesomepics — главная</title>
-
-    <link rel="stylesheet" href="css/indexStyles.css">
-    <script src="js/slider.js"></script>
+    
+    <link rel="icon" sizes="32x32" type="image/svg+xml" href="images/logo.svg">
+    <link rel="stylesheet" href="css/commonStylesV1.2.css">
+    <link rel="stylesheet" href="css/indexStylesV1.1.css">
+    <script src="js/slider.js" async></script>
+    <script src="js/theme.js" async></script>
 </head>
 <body>
     <!-- Хедер -->
     <header>
-        <a href="#">все<br/>статьи</a>
+        <a href="allArticles.html">все<br/>статьи</a>
         <a href="index.html" class="title">takesomepics</a>
         <input type="checkbox" id="burgerCheckbox" class="burgerСheckbox">
         <label for="burgerCheckbox" class="burger"></label>
         <div class="burgerLinks">
-            <a href="#">все статьи</a>
-            <a href="article.html">об авторе</a>
+            <a href="allArticles.html">все статьи</a>
+            <a href="aboutAuthor.html">об авторе</a>
         </div>
-        <a href="#">об<br/>авторе</a>
+        <a href="aboutAuthor.html">об<br/>авторе</a>
     </header>
     <!-- Основной контент -->
+    <p class="whiteColor"><stong class="medium whiteColor">Привет!</stong> <strong class="regular takesomepics">takesomepics</strong> — это сайт со статьями, в которых я изучаю разные <strong class="regular">аспекты фотографии</strong> и то, как они <strong class="regular"></strong>влияют</strong> на неё. </p>
+    <p class="whiteColor">Сайт создан для <strong class="regular">любого человека</strong>, который интересуется фотографией. Не только для фотографа. <strong class="regular">Красивые снимки</strong> можно делать и на телефон, даже не имея профессиональной камеры. Достаточно знать простые правила, которые я буду описывать в своих статьях.</p>
+    
+    <div class="lastArticle">
+        <p>самая последняя статья</p>
+        <a href="how_to_choose_mirrored_cam.html" class="articleLink" style="background: url(images/articleImages/how_to_choose_mirrored_cam/two_cameras.png);
+        background-size: cover;
+        background-position: center;">
+            <p>Какие существуют зеркальные камеры? Какую выбрать новичку? А какая подойдет профи?</p>
+        </a>
+    </div>
 
+    
+    
     <!-- Слайдер "Лучшие статьи" -->
-    <div class="bestArticles">
-        <a href="#">лучшие<br/>статьи</a>
+     <!-- <div class="bestArticles">
+        <p>лучшие<br/>статьи</p>
         <div class="slider">
             <div class="sliderWrapper">
                 <input type="radio" name="r" id="r1" checked></input> 
@@ -42,7 +58,7 @@
                     <p>Да ну вы чего...</p>
                 </a>
                 <a href="#" class="sliderItem">
-                    <p>Я вас лично ненавижу</p>
+                    <p>Вам должно быть стыдно</p>
                 </a>
             </div>
 
@@ -53,31 +69,33 @@
                 <label for="r4" class="sliderIndicator"></label>
             </div>
         </div>
-    </div>
+        <button class="sliderButton" onclick="slider('prev')">Предыдущий слайд</button>
+        <button class="sliderButton" onclick="slider('next')">Следующий слайд</button>        
+    </div> -->
 
-    <!-- Контейнер "Все статьи" -->
+    <!-- Контейнер "Все статьи" 
     <div class="allArticles">
-        <a href="#">все<br/>статьи</a>
+        <a href="allArticles.html">все<br/>статьи</a>
         <div class="allArticlesWrapper">
 
-            <a class="miniFirstArticle" href="#">
+            <a class="miniFirstArticle" href="types_of_light_in_photography.html">
                 <div class="line"></div>
                 <div class="articleText">
                     <h4 class="articleTitle">
-                        я научу вас снимать пейзажи
+                        виды света в фотографии
                     </h4>
-                    <p>
-                        В этой замечательной статье, кроме воды и прочего, я разберу основные аспекты съемки пейзажа. Чтоб вы потом у меня снимали так эти пейзажи грёбаные и все охали только, да ахали! Да, конечно, в 90-х все по другому было... все мы, до единого на пленочку, епта, снимали, понимаешь?
+                    <p class="whiteColor">
+                        Хорошая фотография всегда состоит из трех объективных факторов: <strong class="regular"> свет, цвет, композиция. </strong> Если ты не знаешь как работает свет и как его использовать, то тебе будет сложно сделать хорошую фотографию.
                     </p>
                 </div>
             </a>
-            <a class="miniSecondArticle" href="#">
+            <a class="miniSecondArticle" href="article.html">
                 <div class="line"></div>
                 <div class="articleText">
                     <h4 class="articleTitle">
                         как снимать из космоса?
                     </h4>
-                    <p>
+                    <p class="whiteColor">
                         ХАХХААХА ДА Я САМ ХЗ ВООБЩЕ, давай вместе разбираться! Че за прикол пацаны? Этим занимаются только те, у кого в макро фотографии большие проблемы походу
                     </p>
                 </div>
@@ -88,7 +106,7 @@
                     <h4 class="articleTitle">
                         я научу вас снимать тачки!
                     </h4>
-                    <p>
+                    <p class="whiteColor">
                         Йоу! Пацанчики, погнали снимать тачки, я обожаю блеск своей старой бэхи, когда смотрю на неё, не могу удержаться от того, чтобы сфотать! Я уверен, у вас такое же, с вашими ублюдскими ладами! Хех)
                     </p>
                 </div>
@@ -96,7 +114,7 @@
 
         </div>
     </div>
-
+-->
     <!-- Футер -->
     <footer>
         <div class="footerTitle">
@@ -104,10 +122,39 @@
         </div>
 
         <div class="footerLinks">
-            <a href="#">тема<br/>светлая</a>
-            <a href="#">все<br/>статьи</a>
-            <a href="#">об<br/>авторе</a>
+            <a href="#" id="theme">тема<br/>светлая</a>
+            <a href="allArticles.html">все<br/>статьи</a>
+            <a href="aboutAuthor.html">об<br/>авторе</a>
         </div>
-    </footer>
+    </footer> 
+
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+    ym(96219567, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true,
+         webvisor:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/96219567" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter -->
+ 
+ <!-- Google tag (gtag.js) -->
+ <script async src="https://www.googletagmanager.com/gtag/js?id=G-BMSJST5PYG"></script>
+ <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+ 
+   gtag('config', 'G-BMSJST5PYG');
+ </script>
+ 
 </body>
 </html>

@@ -1,0 +1,284 @@
+div.contentWrapper {
+    width: 100%;
+    
+    display: flex;
+}
+
+/* блок "все статьи" */
+
+div.allArticles{
+    width: 67.55%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+}
+div.allArticles > p{
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60.9%;
+}
+
+div.allArticlesWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 45px;
+}
+
+a.article{
+    display: flex;
+    width: 745px;
+    height: 146px;
+    justify-content: center;
+    align-items: center;
+    gap: 17px; 
+    
+    border-radius: 15px;
+    border: 1px solid #13D68F;
+    background: #3C3C3C;
+
+    text-decoration: none;
+}
+a.article img{
+    width: 242px;
+    height: 146px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    border: 1px solid #13D68F;
+}
+div.textWrapper{
+    display: flex;
+    width: 485px;
+    padding-right: 17px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+}
+div.textWrapper p.articleTitle{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 108.4%;
+}
+
+div.textInnerWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px; 
+}
+div.textWrapper p.articleText{
+    overflow: hidden;
+    height: 58px; 
+    
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 104%;
+}
+div.textWrapper p.articleDate{
+    align-self:flex-end;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 104%; /* 12.48px */
+}
+
+/* Сайдбар */
+div.sidebar{
+    width: 32.45%;
+
+    display: flex;
+    flex-flow: column wrap;
+    gap: 46px;
+}
+
+div.sidebar > p{
+    text-align: center;
+    font-size: 36px; 
+    font-style: normal;
+    font-weight: 500;
+    line-height: 78%;
+    text-indent: 0;
+}
+
+div.sidebar > a{
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 83%; /* 36.52px */
+    text-decoration: none;
+}
+div.articlesWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 45px;
+    flex-wrap: wrap;
+}
+
+div.articlesWrapper > a{
+    display: flex;
+    max-width: 330px;
+    width: 100%;
+    height: 400px;
+    flex-direction: column;
+    align-items: center;
+
+    text-decoration: none;
+
+    padding-top: 200px;
+
+    border-radius: 15px;
+    border: 1px solid #13D68F;
+}
+
+div.articlesWrapper > a div.articleText{
+    display: flex;
+    width: 88%;
+    padding-top: 15px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+div.articlesWrapper > a div.articleText h4{
+    width: 100%;
+    flex-shrink: 0;
+
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 108.4%; /* 26.016px */
+}
+
+div.articlesWrapper > a div.articleText p{
+    width: 100%;
+    height: 100px;
+    flex-shrink: 0;
+    
+    /* обрыв текста */
+    overflow: hidden;
+    
+    text-indent: 20px;
+    font-family: Comfortaa;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 104%; /* 16.64px */
+}
+
+div.articlesWrapper > a div.line{
+    width: 100%;
+    height: 1px;
+    
+    background: #13D68F;
+}
+
+div.articlesWrapper a{
+    background-size: 340px 200px;
+    background-repeat: no-repeat;
+    background-position: center 0px;
+}
+
+a.miniSecondArticle{
+    background: url(../images/indexImages/earth.jpg);
+}
+
+a.miniThirdArticle{
+    background: url(../images/indexImages/car.jpg);
+}
+
+.lastArticle{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px; 
+}
+.lastArticle p{
+    text-align: center;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 83%; /* 36.52px */
+}
+
+a.articleLink{
+    width: 100%;
+    height: 544px;
+
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+
+    transition: all .6s ease;
+    
+    border-radius: 83px;
+    border: 4px solid var(--base, #13D68F);
+    box-shadow: 0px -109px 38px -27px rgba(0, 0, 0, 0.56) inset;
+    flex-shrink: 0;
+}
+
+a.articleLink p{
+    width: 86.11%;
+    height: 50px;
+
+    overflow: hidden;
+
+    text-align: center;
+    color: #FFF;
+    font-family: Comfortaa;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 104.9%; /* 25.176px */
+}
+
+/* медиа-запросы */
+@media(max-width:1200px) {
+    div.contentWrapper{
+        flex-flow: column;
+    }
+    div.allArticles, div.sidebar{
+        width: 100%;
+    }
+    div.articlesWrapper{
+        flex-flow: row wrap;
+    }
+    div.articlesWrapper > a{
+        width: 330px;
+    }
+}
+@media(max-width:600px) {
+    div.allArticles{
+        padding: 0;
+    }
+}
+@media(max-width:444px) {
+    div.articlesWrapper > a{
+        width: 100%;
+    }
+    a.articleLink{
+        border-radius: 40px; 
+        height: 250px;
+        border: 1px solid #13D68F;
+    }
+    a.articleLink p{
+        width: 80%;
+        font-size: 14px;
+        height: auto;
+    }
+}
