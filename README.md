@@ -1,4 +1,9 @@
-# Сайт со статьями для изучения адаптивной верстки
+# Сайт со статьями на чистом HTML + CSS
+
+### Link <a href="https://www.takesomepics.ru">takesomepics.ru</a>
+
+### Как выглядит?
+![firefox_9ZIWCcVvgn](https://github.com/Glebanka/takesomepics/assets/92989466/affd6ef4-a234-48ec-bf49-00db17a15028)
 
 #### Че это такое?
 Сайт где вы можете почитать прекрасные статьи про фотографию моего авторства.
