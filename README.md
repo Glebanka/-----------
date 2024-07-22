@@ -1,6 +1,6 @@
 # Сайт со статьями на чистом HTML + CSS
 
-### Link https://glebanka.github.io/takesomepics/aboutAuthor.html
+### Link https://glebanka.github.io/takesomepics/index.html
 
 ### Как выглядит?
 ![firefox_9ZIWCcVvgn](https://github.com/Glebanka/takesomepics/assets/92989466/affd6ef4-a234-48ec-bf49-00db17a15028)
